@@ -1,0 +1,28 @@
+{% extends 'common/navigation.html' %}
+
+{% block content %}
+
+<div class='container-fluid'>
+  <div>
+    <h3> Contact Me! </h3>
+  </div>
+  <form id='contact-form' class='form-inline' method="get" action="{% url 'contact' %}"">
+    <fieldset>
+
+    </fieldset>
+    <div class='form-group'>
+      <div class='row'>
+        <div class='col'>
+          <label for='first-name'>Name</label>
+            {{ contact_form.first_name }}
+        </div>
+        <div class='col'>
+          <label for='last-name'>Last name</label>
+          {{ contact_form.last_name }}
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+{% endblock content %}
