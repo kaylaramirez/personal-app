@@ -10,5 +10,6 @@ class ContactForm(forms.Form):
     last_name = forms.CharField(required=True, widget=forms.TextInput(attrs={
         'class': 'form-control last-name'}))
     #email_address =
-    #subject =
+    subject = forms.CharField(required=True, widget=forms.TextInput(attrs={
+        'class': 'form-control subject'}))
     #message =

@@ -1,6 +1,8 @@
 
 .nav-logo {
-    width: 70px;
+    width: 50px;
+    height: auto;
+    padding-left: 10px;
 }
 .navbar-custom {
     background-color: #E0BCA4;
@@ -21,4 +23,58 @@
 }
 .navbar-item {
   text-align: right;
+}
+.navbar-brand{
+  padding-bottom: 0;
+}
+.nav{
+  padding-bottom: 0;
+}
+
+.picture-row{
+  background-image: url('/static/common/img/home-office-pic.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 800px;
+}
+@media only screen and (max-width: 767px){
+  .picture-row{
+    background-image: url('/static/common/img/home-office-pic.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    height: 400px;
+  }
+}
+.name{
+  text-align: center;
+  position: -webkit-sticky;
+  position: sticky;
+  align-self: flex-start;
+  top: 40px;
+}
+
+h1{
+  color: white;
+  background-color: black;
+}
+
+.job-title{
+  color: white;
+  background-color: black;
+}
+
+.footer{
+  background-color: #E0BCA4;
+}
+.name2{
+  text-align: center;
+}
+.body {
+  font-family: "Libre Franklin", Helvetica, sans-serif;
 }

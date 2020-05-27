@@ -1,6 +1,20 @@
-{% include 'common/navigation.html' %}
+{% extends 'common/navigation.html' %}
 
-<div class="container-fluid">
-  <br>
-  <h1>{{ welcome_message }} </h1>
+{% block content %}
+<div class="container-fluid pr-0 pl-0">
+  <div class="picture-row">
+      <div class='d-flex justify-content-center'>
+        <div class='name p-5'>
+          <h1>I'm Kayla.</h1>
+          <p class='job-title'>senior software developer and analyst</p>
+        </div>
+      </div>
+  </div>
+  <div class='p-2 text-center'>
+    <h3>hi!</h3>
+    <div>
+      I'm a senior software developer/analyst based in Austin, Texas.
+    </div>
+  </div>
 </div>
+{% endblock %}
