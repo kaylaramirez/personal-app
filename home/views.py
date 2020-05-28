@@ -48,3 +48,6 @@ class ResumeView(TemplateView):
 
     def get(self, request, *args, **kwargs):
         return self.render_to_response(self.get_context_data(**kwargs))
+
+class UltimateView(TemplateView):
+    template_name = 'home/ultimate.html'
